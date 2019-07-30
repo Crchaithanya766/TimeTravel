@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTraveler", "TimeTraveler\TimeTraveler.csproj", "{D1DC304D-3D06-472D-8B87-2B0A8115FE1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{F25C34DA-A626-4A1F-8937-F1489394DDD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataEntity", "DataEntity", "{72D93348-E38C-4018-A9F3-4182782892AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{EF37DC0C-39CC-4780-A567-305B133BAC00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeMachineEntites", "TimeMachineEntites\TimeMachineEntites.csproj", "{1D8C796C-F1F9-4737-B70C-4E71910311BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1DC304D-3D06-472D-8B87-2B0A8115FE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DC304D-3D06-472D-8B87-2B0A8115FE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DC304D-3D06-472D-8B87-2B0A8115FE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DC304D-3D06-472D-8B87-2B0A8115FE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF37DC0C-39CC-4780-A567-305B133BAC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF37DC0C-39CC-4780-A567-305B133BAC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF37DC0C-39CC-4780-A567-305B133BAC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF37DC0C-39CC-4780-A567-305B133BAC00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8C796C-F1F9-4737-B70C-4E71910311BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8C796C-F1F9-4737-B70C-4E71910311BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8C796C-F1F9-4737-B70C-4E71910311BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8C796C-F1F9-4737-B70C-4E71910311BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF37DC0C-39CC-4780-A567-305B133BAC00} = {F25C34DA-A626-4A1F-8937-F1489394DDD1}
+		{1D8C796C-F1F9-4737-B70C-4E71910311BD} = {72D93348-E38C-4018-A9F3-4182782892AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16122D75-1146-4CFC-826D-C8BEA9A2747A}
+	EndGlobalSection
+EndGlobal

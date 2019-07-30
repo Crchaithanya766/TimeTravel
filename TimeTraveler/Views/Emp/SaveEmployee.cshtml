@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "SaveEmployee";
+}
+
+<h2>SaveEmployee</h2>
+<div>
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td><input type="text" id="txtname" /> </td>
+        </tr>
+        <tr>
+            <td>DOJ :</td>
+            <td><input type="text" id="txtDOJ" /> </td>
+        </tr>
+        <tr>
+            <td>Department :</td>
+            <td><input type="text" id="txtdepartment" /> </td>
+        </tr>
+    </table>
+    <input type="submit" id="btnsubmit" value="Save" onclick="SaveEmployee()" />
+</div>
+<div id="GetPartial">
+
+</div>
+<script>
+
+
+    function SaveEmployee() {
+        var model = {
+            Name: $('#txtname').val(),
+            DOJ: $('#txtDOJ').val(),
+            Department: $('#txtdepartment').val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/Emp/AddEmp",
+            data: JSON.stringify({
+                data: model
+            }),
+            cache: false,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                debugger;
+                getAll();
+                //alert("Successfully Created");
+            }
+
+        });
+    }
+
+    function getAll() {
+        $.ajax({
+            type: "Get",
+            url: "/Emp/GetAllEmpPartial",
+
+            cache: false,
+            dataType: "Html",
+            contentType: "application/html; charset=utf-8",
+            success: function (data) {
+                debugger;
+                var da = data;
+                $('#GetPartial').html(da);
+            }
+
+        });
+    }
+
+</script>
